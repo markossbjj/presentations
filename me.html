@@ -24,79 +24,53 @@
     <textarea id="source">
 class: center, middle   
 
-# Good Morning, Hello and Welcome!
+# Cześć! 👋
+## _Cieszę się, że jesteś!_
 
----
+Jak trafiłeś na mojego BLOGa to raczej nie przypadek, a przeznaczenie!
+Jeśli chcialbyś zacząć żyć lepiej i osiągać więcej to na nim znajdziesz wiele wartościowych treści, 
+które pomogą Ci w tym, aby wypracować kluczowe nawyki, aby to osiągnąć! 🏆
 
-# Łukasz Piotr Łuczak, MSc
+## Bedę tutaj uczyć 13 nawyków sukcesu 
 
-.center.fit[![Profile picture](https://lh4.googleusercontent.com/BBchnd7D0cwR4tFFOH9UJK7werMfopO1RNR8MKhiQVTJkTYk4XPQjaumzDjLrnBDkLA=w2400)]
+1. Trenuj swoją mentalność
+2. Planuj dzień i zwiększ produktywność 
+3. Stań się zdyscyplinowany i wytrwały
+4. Dąż do długowieczności
+5. Zostań niezależny finansowo
+6. Ofiaruj dobro, a ono wróci
+7. Zachowaj czystość umysłu
+8. Bądź pewny siebie
+9. Rozwijaj się przez całe życie
+10. Staraj się wpierw zrozumieć
+11. Walcz o swoje marzenia
+12. Twórz synergię i używaj zasadę ,,WIN-WIN’’
+13. Bądź odpowiedzialny za swoje życie
 
-- PhD Student at Interdisciplinary Doctoral School Lodz University of Technology
-- FrontEnd TechLead
-- Solutions Architect, Software Engineer
-- Author and Editor
-- Auditor, Consultant and Trainer
+W każdym nawyku będą sprawdzone metody i narzędzia,
+które bardzo Ci pomogą! 🔥
 
----
+## 6 Obszarów Twojego życia
+Te nawyki pomagają w osiągnięciu balasnu w sześciu sferach Twojego życia 🤙
 
-# What do I do?
+>ZDROWIE. FINANSE. RELACJE.
+>PRACA. ROZWÓJ. CZAS WOLNY.
 
-I am software developer, engineer and solutions architect. For over twenty years I have been helping to solve problems using the achievements of Information and communication technologies. I mainly focus on Frontend solutions, because they determine the success of the prepared solution. At the same time, I do not limit myself to any language or platform and always choose the right tools for the issue ⚡
+Nie możesz skupiać się na jednym obszarze,
+a resztę spychać na drugi, trzeci czy czwarty plan…
+Musisz zachować równowagę między nimi, aby mieć to co pragniesz.
 
-I am a researcher and passionate about science and technology. I love puzzles and challenges. A faithful follower of the TQM and Lean philosophy. Agile practitioner and Software Craftmanship challenger. Saying "this can't be done" acts as a creativity trigger for me 🕵️
+Czas na działanie! 💪
 
-I love sharing knowledge and experience. I do this by being a mentor, speaker, trainer and consultant.
+## Gdzie mnie znajdziesz?
 
+- [Twiitter](https://twitter.com/markossbjj)
+- [Youtube](https://www.youtube.com/channel/UC1w27h9FCsk5Anno9i6QrPA)
+- [LinkedIn](https://www.linkedin.com/in/agentnamiare/)
+- [Facebook](https://www.facebook.com/markus.ciesielski)
+- [Instagram](https://www.instagram.com/markossbjj/)
 
----
-
-# What I've been working on recently
-
-Recently I'm working on:
-- newsletter for people related to Frontend - [Frontlanders](https://frontlanders.com)
-- Nx extension plugins for PHP and WordPress
-- backoffice panels template for Angular
-- preparing materials for conference talks
-
-I also work on some commercial projects which I NDA protected 🤐
-
----
-
-# RxJS Snippet for conference :) 
-
-```typescript
-export class BookEffects {
-  search$: Observable<Action> = this.actions$.pipe(
-    ofType(ActionTypes.SEARCH),
-    debounceTime(300),
-    map(toPayload),
-    switchMap(query => {
-      if (query === '') { return empty(); }
-
-      const nextSearch$ = this.actions$.ofType(book.ActionTypes.SEARCH)
-        .pipe(skip(1));
-
-      return this.googleBooks.searchBooks(query).pipe(
-        takeUntil(nextSearch$),
-        map(books => new book.SearchCompleteAction(books)),
-        catch(() => of(new book.SearchCompleteAction([]))));
-    });
-
-    constructor(private actions$: Actions, 
-      private googleBooks: GoogleBooksService) { }
-}
-```
-
----
-
-# Where can I be found?
-
-- Twitter - https://twitter.com/lukefrontlander
-- Linkedin - https://linkedin.com/in/lukaszpiotrluczak/
-- Github - https://github.com/lukaszpiotrluczak
-
-Come and say hi!
+**Pamiętaj, że działanie jest NAJWAŻNIEJSZE ❗**
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
