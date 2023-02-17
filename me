@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+     @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+     @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+     @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
+     body { font-family: 'Droid Serif'; }
+     h1, h2, h3 {
+       font-family: 'Yanone Kaffeesatz';
+       font-weight: normal;
+     }
+     .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+     .fit img{
+      max-width: 35%;
+      max-height: 35%;
+     }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle   
+
+# Good Morning, Hello and Welcome!
+
+---
+
+# Łukasz Piotr Łuczak, MSc
+
+.center.fit[![Profile picture](https://lh4.googleusercontent.com/BBchnd7D0cwR4tFFOH9UJK7werMfopO1RNR8MKhiQVTJkTYk4XPQjaumzDjLrnBDkLA=w2400)]
+
+- PhD Student at Interdisciplinary Doctoral School Lodz University of Technology
+- FrontEnd TechLead
+- Solutions Architect, Software Engineer
+- Author and Editor
+- Auditor, Consultant and Trainer
+
+---
+
+# What do I do?
+
+I am software developer, engineer and solutions architect. For over twenty years I have been helping to solve problems using the achievements of Information and communication technologies. I mainly focus on Frontend solutions, because they determine the success of the prepared solution. At the same time, I do not limit myself to any language or platform and always choose the right tools for the issue ⚡
+
+I am a researcher and passionate about science and technology. I love puzzles and challenges. A faithful follower of the TQM and Lean philosophy. Agile practitioner and Software Craftmanship challenger. Saying "this can't be done" acts as a creativity trigger for me 🕵️
+
+I love sharing knowledge and experience. I do this by being a mentor, speaker, trainer and consultant.
+
+
+---
+
+# What I've been working on recently
+
+Recently I'm working on:
+- newsletter for people related to Frontend - [Frontlanders](https://frontlanders.com)
+- Nx extension plugins for PHP and WordPress
+- backoffice panels template for Angular
+- preparing materials for conference talks
+
+I also work on some commercial projects which I NDA protected 🤐
+
+---
+
+# RxJS Snippet for conference :) 
+
+```typescript
+export class BookEffects {
+  search$: Observable<Action> = this.actions$.pipe(
+    ofType(ActionTypes.SEARCH),
+    debounceTime(300),
+    map(toPayload),
+    switchMap(query => {
+      if (query === '') { return empty(); }
+
+      const nextSearch$ = this.actions$.ofType(book.ActionTypes.SEARCH)
+        .pipe(skip(1));
+
+      return this.googleBooks.searchBooks(query).pipe(
+        takeUntil(nextSearch$),
+        map(books => new book.SearchCompleteAction(books)),
+        catch(() => of(new book.SearchCompleteAction([]))));
+    });
+
+    constructor(private actions$: Actions, 
+      private googleBooks: GoogleBooksService) { }
+}
+```
+
+---
+
+# Where can I be found?
+
+- Twitter - https://twitter.com/lukefrontlander
+- Linkedin - https://linkedin.com/in/lukaszpiotrluczak/
+- Github - https://github.com/lukaszpiotrluczak
+
+Come and say hi!
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+     var slideshow = remark.create();
+    </script>
+  </body>
+</html>
