@@ -1,3 +1,6 @@
+# Slide 1
+This is slide 1
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,6 +24,9 @@
 
 class: center, middle
 
+# Slide 2
+This is slide 2
+      
 # Title
 
 ---
